@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="form" method="post" action="">
+        <img src="img/ITKsquare-logo.png" alt="logo">
+        <h2 class="text-center">Survey to join a university program</h2>        
+        <p class="disable">Please fill the form and verify your ansers before sumbit.</p>
+        <div class="form-control">
+            <label for="name" id="label-name"><span class="text-danger">* </span>Name <small>(Full name)</small></label>
+            <input type="text" id="name" required="true" placeholder="Enter your name" />
+        </div>       
+        <div class="form-control">
+            <label for="email" id="label-email"><span class="text-danger">* </span>Email</label>
+            <input type="email" id="email" required="true"/>
+        </div>
+        <div class="form-control">
+            <label for="phone" id="label-phone"><span class="text-danger">* </span>Phone number</label>
+            <input type="number" id="phone" min="10" max="10" required="true" />
+        </div>
+        <div class="form-control">
+            <label for="path" id="label-path"><span class="text-danger">* </span>Select the career path you prefer
+            </label>
+            <select name="path" id="path">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Salesforce">Salesforce</option>
+            </select>
+        </div>        
+        <div class="form-control">
+            <label>Select the materials you prefer to have in a course.
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Documents (PDF and Word)</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Classes online</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Practical assignments</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Teorical assignments</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Conferences</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Practices in the company</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Books (physical)</input></label>           
+        </div>
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" rows="5"></textarea>
+        </div>
+        <div class="form-control">
+            <label>Would you like to take another survey at a later time ?</label>
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+            </label>
+        </div>
+        <button class="btn-primary" type="submit" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>
